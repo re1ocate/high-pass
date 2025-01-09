@@ -1,0 +1,168 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title High Pass
+    link(rel='stylesheet', href="main.css")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap", rel="stylesheet")
+  body
+    header.header
+      div.container
+        div.flex
+          a.header__logo(href='#')
+            svg(viewBox="0 0 191 31" width="190px")
+              use(xlink:href="images/sprite.svg#logo")
+          nav.nav.flex
+            button.header__button
+              svg(width="20px" height="18px")
+                use(xlink:href="images/sprite.svg#header-button")
+            ul.nav__list.flex
+              li.nav__list-item
+                a.nav__list-item-link(href="#about") О студии
+              li.nav__list-item
+                a.nav__list-item-link(href="#project") Наши проекты
+              li.nav__list-item
+                a.nav__list-item-link(href="#") Услуги
+              li.nav__list-item
+                a.nav__list-item-link(href="#hero") Мастер-классы
+              li.nav__list-item
+                a.nav__list-item-link(href="#contacts") Контакты
+          button.header__search
+            svg(viewBox="0 0 25 25" width="25px" height="25px")
+              use(xlink:href="images/sprite.svg#search")
+    main.main
+      section.hero(id="hero")
+        div.container
+          div.hero__list.grid
+            div.hero__list-item.flex
+              div.hero__list-element #мастеркласс
+              span.hero__list-text Мастер-класс от Игоря Робова
+              h3.hero__list-subtitle Неоновый фотосет 2.0 7 июля 20:00
+              button.hero__list-button.btn Узнать больше
+            div.hero__list-item
+              h1.hero__list-title Работы участников предыдущего мастер-класса
+            div.hero__list-item
+            div.hero__list-item
+            div.hero__list-item
+      section.about(id="about")
+        div.container
+          h2.about__title О студии
+          div.grid
+            p.about__text В рамках спецификации современных стандартов, интерактивные прототипы, инициированные исключительно синтетически, ограничены исключительно образом мышления. Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада требует от нас анализа соответствующих условий активизации! Следует отметить, что семантический разбор внешних противодействий фиксирует необходимость распределения внутренних резервов и ресурсов. Безусловно, граница обучения кадров предоставляет широкие возможности для первоочередных требований. Повседневная практика показывает, что глубокий уровень погружения предполагает независимые способы реализации новых принципов формирования материально-технической и кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации являются только методом политического участия и нарушающими общечеловеческие нормы этики.
+            picture.about__picture
+              source(media="(max-width: 700px)" srcset="/images/about-320.png")
+              source(media="(max-width: 900px)" srcset="/images/about-768.png")
+              source(media="(max-width: 1300px)" srcset="/images/about-1024.png")
+              img(src="/images/about.png", alt="about")
+            div.form
+              h3.about__subtitle Подписаться на рассылку
+              input.about__input(type="email" placeholder="Email")
+              button.about__button.btn Отправить
+      section.project(id="project")
+        div.container
+          h2.project__title Наши проекты
+          ul.project__list.grid
+            li.project__list-item
+              picture.project__list-item__picture
+                source(srcset="/images/project-1-320.png" media="(max-width: 700px)")
+                source(srcset="/images/project-1-1024.png" media="(max-width: 900px)")
+                source(srcset="/images/project-1-1024.png" media="(max-width: 1300px)")
+                img(src="/images/project-1.png", alt="project")
+              p.project__list-item__text Синтетически, смешаны с не уникальными
+                span.hidden ...
+                span.mobile-hidden &nbspданными до степени…
+              div.project__list-item__date 16 июня
+              div.project__list-item__element #пейзаж
+            li.project__list-item
+              picture.project__list-item__picture
+                source(srcset="/images/project-2-320.png" media="(max-width: 700px)")
+                source(srcset="/images/project-2-1024.png" media="(max-width: 900px)")
+                source(srcset="/images/project-2-1024.png" media="(max-width: 1300px)")
+                img(src="/images/project-2.png", alt="project")
+              p.project__list-item__text В своём стремлении улучшить опыт мы
+                span.hidden ...
+                span.mobile-hidden &nbspупускаем, что явные...
+              div.project__list-item__date 28 мая
+              div.project__list-item__element #портрет
+            li.project__list-item
+              picture.project__list-item__picture
+                source(srcset="/images/project-3-320.png" media="(max-width: 700px)")
+                source(srcset="/images/project-3-768.png" media="(max-width: 900px)")
+                source(srcset="/images/project-3-1024.png" media="(max-width: 1300px)")
+                img(src="/images/project-3.png", alt="project")
+              p.project__list-item__text Равным образом, высокое качество позиционных
+                span.mobile-hidden ...
+                span.hidden высокотехнологичная концепция общественного уклада
+              div.project__list-item__date 14 мая
+              div.project__list-item__element #предмет
+            li.project__list-item
+              div.project__list-item__date 9 апреля
+              h3.project__list-item__title Семантический разбор
+              p.project__list-item__text В рамках спецификации современных стандартов, интерактивные прототипы
+              button.project__list-item__button О проекте
+              div.project__list-item__element #fuji
+            li.project__list-item
+              div.project__list-item__date 20 марта
+              h3.project__list-item__title Забвение
+              p.project__list-item__text Играет важную роль в формировании глубокомысленных рассуждений
+              button.project__list-item__button О проекте
+              div.project__list-item__element #проектзабвение
+            li.project__list-item
+              picture.project__list-item__picture
+                source(srcset="/images/project-6-320.png" media="(max-width: 700px)")
+                source(srcset="/images/project-6-1024.png" media="(max-width: 900px)")
+                source(srcset="/images/project-6-1024.png" media="(max-width: 1300px)")
+                img(src="/images/project-6.png", alt="project")
+              p.project__list-item__text Как принято считать, многие известные личности и по сей день остаются уделом либералов…
+              div.project__list-item__date 9 марта
+              div.project__list-item__element #ретушь
+            li.project__list-item
+              picture.project__list-item__picture
+                source(srcset="/images/project-7-320.png" media="(max-width: 700px)")
+                source(srcset="/images/project-7-1024.png" media="(max-width: 900px)")
+                source(srcset="/images/project-7-1024.png" media="(max-width: 1300px)")
+                img(src="/images/project-7.png", alt="project")
+              p.project__list-item__text С учётом сложившейся международной обстановки, новая модель организационной…
+              div.project__list-item__date 1 марта
+              div.project__list-item__element #портрет
+      section.contacts(id="contacts")
+        div.container
+          h2.contacts__title Контакты
+          div.grid
+            div.contacts__map.flex
+              div.contacts__map-block.flex
+                button.contacts__map-button
+                h3.contacts__map-subtitle Студия «High pass»
+                p.contacts__map-text 107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82&nbsp
+                  span
+                    a.contacts__map-tel(href="tel:+749542423532") +7 495 424-23-532
+            div.contacts__request
+              h3.contacts__request-subtitle Оставить заявку
+              p.contacts__request-text Оставьте ваши данные, указав в графе «Комментарий» желаемые время и дату съёмки или другого мероприятия
+              input.contacts__request-input(type="text" placeholder="Имя")
+              input.contacts__request-input(type="text" placeholder="Email")
+              textarea.contacts__request-input(placeholder="Комментарий")
+              button.contacts__request-button.btn Отправить
+    footer.footer
+      div.container
+        div.flex
+          div.hidden-logo
+            svg(viewBox="0 0 263 55" width="171px" height="34px")
+              use(xlink:href="images/sprite.svg#footer-logo-320")
+          svg.footer__logo(viewBox="0 0 263 55" width="263px" height="55px")
+            use(xlink:href="images/sprite.svg#footer-logo")
+          div.footer__author
+            p Которая из моих фотографий самая любимая? Та, которую я собираюсь снять завтра.
+            span © Имоджен Каннингем
+          div.footer__social.flex
+            span.footer__social-text Больше интересного:
+            div.footer__social-links
+              a(href="#")
+                svg.footer__social-media(width="30px" height="30px")
+                  use(xlink:href="images/sprite.svg#footer-ok")
+              a(href="#")
+                svg.footer__social-media(width="30px" height="30px")
+                  use(xlink:href="images/sprite.svg#footer-vk")

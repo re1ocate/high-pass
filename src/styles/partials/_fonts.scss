@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('TTFirsNeue-Regular.eot');
+  src: local('TT Firs Neue Regular'), local('TTFirsNeue-Regular'),
+      url('#{$fontPath}/TTFirsNeue-Regular.eot?#iefix') format('embedded-opentype'),
+      url('#{$fontPath}/TTFirsNeue-Regular.woff2') format('woff2'),
+      url('#{$fontPath}/TTFirsNeue-Regular.woff') format('woff'),
+      url('#{$fontPath}/TTFirsNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('TTFirsNeue-Bold.eot');
+  src: local('TT Firs Neue Bold'), local('TTFirsNeue-Bold'),
+      url('#{$fontPath}/TTFirsNeue-Bold.eot?#iefix') format('embedded-opentype'),
+      url('#{$fontPath}/TTFirsNeue-Bold.woff2') format('woff2'),
+      url('#{$fontPath}/TTFirsNeue-Bold.woff') format('woff'),
+      url('#{$fontPath}/TTFirsNeue-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
